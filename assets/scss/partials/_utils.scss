@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+}
+.space-between{
+    justify-content: space-between;
+}
+.text-normal{
+    font-size: 14px;
+    font-weight: 400;
+  
+}
+
+.white-color{
+    color: white;
+}
+.gray-color{
+    color: $text_color;
+}
+.bg-primary{
+    background-color: $primary_color;
+}
+
+.has-padding{
+    padding: 60px 50px;
+}

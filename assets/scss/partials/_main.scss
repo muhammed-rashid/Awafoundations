@@ -1,0 +1,364 @@
+.top-bar{
+    width: 100%;
+    height: 60px;
+    padding: 0px 60px;
+    align-items: center;
+    color: $white_color;
+    //border-bottom: 2px solid $primary_color;
+  ul{
+      margin-left: 10px;
+      li{
+          margin: 0px 5px;
+          i{
+              font-size: 14px;
+              transition: color .3s ease;
+              &:hover{
+                  color: $primary_color;
+              }
+          }
+      }
+  }
+  a{
+      transition: color .3s ease-in;
+      &:hover{
+          color: $primary_color;
+      }
+  }
+  .donation-container{
+      .donte-button{
+        background-color: $primary_color;
+        color: $white_color;
+        margin-left: 10px;
+          padding: 20px 10px;
+      }
+  }
+  
+}
+//menu section
+header{
+
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    padding: 0px 80px;
+    width: 100%;
+    //background-color: $white_color;
+    nav{
+        height: 100px;
+        align-items: center;
+        .logo{
+            width: 120px;
+            height: auto;
+            img{
+                width: 100%;
+            }
+        }
+        .navbar{
+            ul{
+                li{
+                    margin:0px 20px;
+                    a{
+                        color: $white_color;
+                        font-weight: 500;
+                        transition: color .3s ease;
+                        &:hover{
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+
+    } 
+}
+
+// hero section
+
+.hero{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+   overflow: hidden;
+    img{
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        height: 100%;
+    }
+    .hero-info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        
+        h1{
+            font-size: 75px;
+            font-weight:700;
+            color: rgba(255, 255, 255, 0.76);
+            line-height: 85px;
+            span{
+                color: $primary_color;
+              
+            }
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    .swiper-pagination{
+        bottom: 40px;
+    }
+    .swiper-pagination-bullet{
+        width: 25px;
+        height: 25px;
+        border: 5px solid $primary_color;
+       background-color: transparent;
+    }
+ }
+
+
+
+ .image-text-container{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     height: 400px;
+     margin-top: 30px;
+     .image-container{
+         width: 50%;
+        overflow: hidden;
+        padding: 5px 5px;
+        position: relative;
+        &:before{
+            content: '';
+            display: block;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $text_color;
+            z-index: -1;
+        }
+        &:after{
+            content: '';
+            display: block;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $text_color;
+            z-index: -1;
+        }
+        img{
+            width: 90%;
+            height: auto;
+            display: block;
+           
+        }
+        .image-gradient{
+            position: absolute;
+            top: 4px;
+            bottom: 10px;
+           height: 100%;
+           width: 100%;
+           background: rgb(255,255,255);
+           background: linear-gradient(32deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        }
+     }
+     .text-container{
+         width: 50%;
+         text-align: center;
+         .primary-button{
+             margin-top: 30px;
+         }
+         
+     }
+ }
+.card{
+    padding: 100px 0px;
+    background-color: $gray-color;
+   
+    
+    .uk-card-body{
+        border: 2px solid $white_color;
+        text-align: center;
+        color: $white_color;
+       background-color: $gray-color;
+       position: relative;
+    
+        // &:before{
+        //     content: '';
+        //     position: absolute;
+        //     background-color: red;
+        //     width: 100px;
+        //     height: 100px;
+            
+        //     left: -5px;
+        //     bottom: -5px;
+         
+         
+        // }
+        .uk-card-title{
+            color: $white_color;
+            font-weight:500;
+        }
+        p{
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+}
+  
+
+//bg section banner last
+.bg-full-image{
+    height: 70vh;
+    background-image: url('/assets/images/bg.jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    .text-content{
+  text-align: center;
+
+        h2{
+            font-size: 66px;
+            font-weight: 500;
+            margin: 0px;
+            color: $white_color;
+        }
+        p{
+            font-size: 22px;
+            font-weight: 400;
+            color: $white_color;
+        }
+    }
+}
+
+.donate-banner{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 33px;
+        font-weight: 600;
+        a{
+            color: $yellow_color;
+            text-decoration: underline;
+        }
+    }
+}
+
+footer{
+    background-color: $primary_color;
+    padding: 80px 10px;
+    height: auto;
+    .footer-content{
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        .footer-columns{
+            h5{
+                color: $yellow_color;
+                font-size: 18px;
+                font-weight: 500;
+            
+            }
+            max-width: 600px;
+            color: white;
+            p{
+                font-weight: 100;
+                line-height: 35px;
+            }
+            h2{
+                color: $white_color;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .about-footer{
+                h2{
+                    font-size: 33px;
+                }
+                
+            }
+
+.quick-links{
+    ul{
+        li{
+            margin-top: 10px;
+            a{
+                color: $white_color;
+                font-size: 16px;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                svg{
+                    height: 14px;
+               
+                }
+            }
+        }
+    }
+}
+
+
+.contact{
+    .details{
+        margin-top: 10px;
+        gap: 10px;
+        .icon-box{
+            background-color: $white_color;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            svg{
+                color: $gray-color;
+                width: 25px;
+                height: auto;
+            }
+            
+        }
+        .details-desc{
+           
+           
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
+.bank-details{
+  h6{
+      color: $white_color;
+      margin: 6px 0px;
+      font-size: 18px;
+      font-weight: 500;
+      span{
+          font-weight: 100;
+      }
+  }
+  .social-icons{
+   svg{
+       margin-left: 10px;
+       color: $white_color;
+   }
+
+  }
+   
+}
+
+        }
+    }
+}
